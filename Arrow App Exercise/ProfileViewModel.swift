@@ -7,6 +7,8 @@
 
 import Foundation
 
+// IN PROGRESS
+
 class ProfileViewModel: ObservableObject {
     @Published var ownProfile: Profile =  Profile(profileid: 0, username: "", imagepath: "", audiopath: "")
     

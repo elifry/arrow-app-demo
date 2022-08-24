@@ -8,6 +8,8 @@
 import SwiftUI
 import UIKit
 
+// IN PROGRESS
+
 struct ImageOverlay: View {
     var body: some View {
         ZStack {
@@ -23,7 +25,7 @@ struct ImageOverlay: View {
 }
 
 struct ProfileView: View {
-    @StateObject var profileViewModel = ProfileViewModel()
+    @StateObject var profileViewModel = ProfileViewModel() // IN PROGRESS
     
     @State private var nameComponents = PersonNameComponents()
     
