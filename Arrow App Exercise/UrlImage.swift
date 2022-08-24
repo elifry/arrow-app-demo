@@ -20,7 +20,6 @@ struct URLImage: View {
         if let data = data, let uiimage = UIImage(data: data) {
             Image(uiImage: uiimage)
                 .resizable()
-//                .aspectRatio(contentMode: .fill)
                 .frame(width: 200, height: 200)
                 .background(Color.gray)
         }
@@ -28,7 +27,6 @@ struct URLImage: View {
             // If no data, show placeholder
             Image(systemName: "heart")
                 .resizable()
-//                .aspectRatio(contentMode: .fill)
                 .frame(width: 200, height: 200)
                 .background(Color.gray)
                 .onAppear{

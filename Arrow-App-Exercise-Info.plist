@@ -2,6 +2,16 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>microphone</string>
+	</array>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>We need access to your microphone to create audio recordings.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>We need access to your camera to take selfies.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>We need access to your photo library to upload pictures.</string>
 	<key>ITSAppUsesNonExemptEncryption</key>
 	<false/>
 </dict>

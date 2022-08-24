@@ -8,15 +8,6 @@
 import Foundation
 
 class ProfileDetailViewModel: ObservableObject {
-    
-//    let model: MusicModel
-    
-//    @Published var liked = true
     @Published var slider: Double = 0
-    @Published var isPlaying = false
-    
-//    init(model: MusicModel) {
-//        self.model = model
-//    }
 }
 

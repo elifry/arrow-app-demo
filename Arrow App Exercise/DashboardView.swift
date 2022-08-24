@@ -14,13 +14,13 @@ extension Array {
 }
 
 struct DashboardView: View {
-    @StateObject var viewModel = ViewModel()
+    @StateObject var dashboardViewModel = DashboardViewModel()
     
     var body: some View {
         NavigationView {
             ScrollView {
                 VStack(alignment: .leading) {
-                    ForEach(viewModel.profiles.chunks(2), id: \.self) { chunk in
+                    ForEach(dashboardViewModel.profiles.chunks(2), id: \.self) { chunk in
                         HStack {
                             ForEach(chunk, id: \.self) { profile in
                                 NavigationLink(destination: ProfileDetail(profile: profile, viewModel: ProfileDetailViewModel())) {
@@ -39,10 +39,10 @@ struct DashboardView: View {
             .navigationTitle("Dashboard")
         }
         .onAppear {
-            viewModel.fetch()
+            dashboardViewModel.fetch()
         }
         .refreshable {
-            await viewModel.reload()
+            await dashboardViewModel.reload()
         }
     }
 }

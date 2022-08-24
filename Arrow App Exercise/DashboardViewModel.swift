@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import SwiftUI
 
 struct Profile: Hashable, Codable {
     let profileid: Int
@@ -15,7 +14,7 @@ struct Profile: Hashable, Codable {
     let audiopath: String
 }
 
-class ViewModel: ObservableObject {
+class DashboardViewModel: ObservableObject {
     @Published var profiles: [Profile] = []
     
     func fetch() {

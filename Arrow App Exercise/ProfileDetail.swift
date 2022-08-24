@@ -27,10 +27,6 @@ struct ProfileDetail: View {
     @StateObject private var soundManager = SoundManager()
     
 //    @State var audioPlayer: AVAudioPlayer!
-//
-//    func toggle() {
-//        viewModel.isPlaying.toggle()
-//    }
 
     var body: some View {
         VStack {
@@ -59,6 +55,9 @@ struct ProfileDetail: View {
                 Text("1:34")
             }.padding(.horizontal, 45)
 
+            Text("(requires silent mode off, excuse the hasty demo - also ignore the slider lol)")
+                .padding(.horizontal, 40)
+
             Spacer()
         }
         Spacer()
@@ -67,6 +66,6 @@ struct ProfileDetail: View {
 
 struct ProfileDetail_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileDetail(profile: Profile(profileid: 0, username: "Jane Doe", imagepath: "https://storage.googleapis.com/arrow-demo-360300.appspot.com/images/Eli.jpg", audiopath: "https://storage.googleapis.com/arrow-demo-360300.appspot.com/audio/Eli.mp3"), viewModel: ProfileDetailViewModel())
+        ProfileDetail(profile: Profile(profileid: 0, username: "Eli", imagepath: "https://storage.googleapis.com/arrow-demo-360300.appspot.com/images/Eli.jpg", audiopath: "https://storage.googleapis.com/arrow-demo-360300.appspot.com/audio/Eli.mp3"), viewModel: ProfileDetailViewModel())
     }
 }
