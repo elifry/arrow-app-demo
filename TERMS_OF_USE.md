@@ -1,1 +1,0 @@
-This application uses the library Skailer (https://github.com/sameersyd/Skailer). This libraries is available under the Apache 2.0 license, which can be obtained from http://www.apache.org/licenses/LICENSE-2.0.
